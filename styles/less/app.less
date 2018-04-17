@@ -1,0 +1,40 @@
+//less
+@blockHeight : 20px;
+@blockWidth : 20px;
+
+@playerHeight : 10px;
+@playerWidth : 10px;
+
+@playerColor: chocolate;
+@wallColor: beige;
+@destPointColor: cornflowerblue;
+
+.createElement(@width, @height) {
+    position: absolute;
+    width: @width;
+    height: @height;
+}
+
+body {
+    margin: 0px;
+}
+
+#field {
+    background-color: burlywood;
+    position: relative;
+}
+
+#wall {
+    .createElement(@blockWidth, @blockHeight);
+    background-color: @wallColor;
+}
+
+#player {
+    .createElement(@playerWidth, @playerHeight);
+    background-color: @playerColor;
+}
+
+#destPoint {
+    .createElement(@blockWidth, @blockHeight);
+    background-color: @destPointColor;
+}

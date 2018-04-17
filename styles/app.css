@@ -1,0 +1,29 @@
+#field {
+    background-color: burlywood;
+    position: relative
+}
+
+#wall {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: beige
+}
+
+#player {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: chocolate
+}
+
+#destPoint {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: cornflowerblue
+}
+
+body {
+    margin: 0px;
+}
